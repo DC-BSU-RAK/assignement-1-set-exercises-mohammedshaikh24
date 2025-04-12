@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* makes footer stick to bottom */
+}
+
+header {
+  background-color: #17072b; /* dark purple header */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: Tahoma, sans-serif;
+  font-size: 3em; /* bigger title */
+  font-weight: 700;
+  text-decoration: underline; /* underline the title */
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* space between nav items */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em; /* bigger nav text */
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px; /* space around main content */
+  flex: 1;
+}
+
+.welcome {
+  flex: 2; /* takes more space than line-up */
+  padding-right: 30px;
+}
+
+.welcome h2 {
+  font-size: 3.5em; /* make welcome title bigger */
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  line-height: 1.6; /* spacing between lines */
+  margin-bottom: 20px;
+}
+
+.welcome img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+}
+
+.line-up {
+  flex: 1;
+  background-color: #264075; /* dark blue box */
+  color: white;
+  padding: 20px;
+  border-radius: 7px;
+  right: 20px; /* just in case */
+}
+
+.line-up h2 {
+  font-size: 2.6em; /* make line up title bigger */
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.line-up ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2; /* more space between list items */
+  margin-bottom: 20px;
+}
+
+.line-up .images {
+  display: flex;
+  gap: 10px; /* space between two images */
+}
+
+.line-up .images img {
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover; /* keeps the images neat */
+}
+
+footer {
+  background-color: #8c15e9; /* footer color */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+  margin-top: auto; /* pushes footer to bottom */
+}
