@@ -2,28 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- makes sure it works well on phones and screens -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meow and Momo Blog</title>
+    <!-- connects the css file -->
     <link rel="stylesheet" href="style sheet brownie.css">
+    <!-- loads the loading screen script after page is ready -->
     <script defer src="loading.js"></script>
 </head>
 <body>
-    <!-- loading Screen -->
+    <!-- loading screen stuff that shows first -->
     <div id="loadingscreen">
         <div class="loadercontent">
             <img src="images (2).jpeg" alt="Brownie icon" class="loadericon" />
             <p class="loadertext">Baking in progress… 🍫</p>
-            <div class="turn"></div>
+            <div class="turn"></div> <!-- little spinning circle -->
         </div>
     </div>
+
+    <!-- background image with blur -->
     <div class="backgroundbrownie"></div>
 
-    <!-- main content of the page -->
-    <div id="content" class="pageborder"> <!-- Add class="pageborder" -->
-        <!-- this shows the title of the recipe-->
+    <!-- the main content inside the page border -->
+    <div id="content" class="pageborder">
+        <!-- title of the recipe -->
         <h1>Manaar's Fudgy Brownies </h1>
 
-        <!-- The whole description of why the recipe is being shared -->
+        <!-- little backstory and why this recipe is special -->
         <p>
             If you are in NEED of some of the most chocolate, fudgy and rich brownies 🍫, then this is the right place for you. 
             These are my go-to brownies made by my one and only my wife 💕. Whenever I want something fudgy, gooey, and dangerously delicious 😋, 
@@ -31,7 +36,7 @@
             ✨
         </p>
 
-        <!-- telling what the ingredients are -->
+        <!-- ingredients section starts -->
         <h2>This is all that will be needed for the Brownies 🍪</h2>
         <ul>
             <li>1/3 cup (40g) unsweetened cocoa powder 🍫 (Now this is the star of the show!)</li>
@@ -45,7 +50,7 @@
             <li>1/2 cup chocolate chips or chunks 🍫 (this is optional but please do it for the best experience ever! 😍)</li>
         </ul>
 
-        <!--step by step of the baking explained -->
+        <!-- the actual baking steps -->
         <h2>Now Let’s Make it with Love and Magic ✨</h2>
         <ol>
             <li>First, preheat your oven to 185°C (365°F) 🔥. Then, grab a small baking pan or tray and add parchment paper on it 📜.</li>
@@ -59,18 +64,19 @@
         </ol>
     </div>
 
+    <!-- script that runs after everything loads -->
     <script>
         window.addEventListener("load", function () {
             const loader = document.getElementById("loadingscreen");
             const content = document.getElementById("content");
 
-            // this fades the screen
+            // fades out the loading screen
             loader.classList.add("fade-out");
 
-            // shows the website after a bit
+            // makes the site show after 1 sec
             setTimeout(() => {
-                loader.style.display = "none"; //hides the loading screen
-                content.classList.add("visible"); //this makes the website visible
+                loader.style.display = "none"; // hides loading screen
+                content.classList.add("visible"); // shows main content
             }, 1000); 
         });
     </script>
