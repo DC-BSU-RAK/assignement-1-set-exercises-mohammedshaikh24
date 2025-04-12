@@ -1,0 +1,68 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* sets the font for the whole page */
+    margin: 0; /* removes space around the page */
+    padding: 0; /* removes space inside the page */
+    background-color: #f4f4f4; /* light grey background */
+  }
+  
+  header {
+    background-color: #333; /* dark background for header */
+    padding: 10px; /* adds some space inside header */
+    color: white; /* makes text in header white */
+  }
+  
+  nav ul {
+    list-style: none; /* removes bullets from nav list */
+    padding: 0; /* takes out default padding */
+    margin: 0; /* removes default margin */
+    text-align: center; /* centers nav items */
+  }
+  
+  nav ul li {
+    display: inline; /* puts nav items side by side */
+    margin: 0 15px; /* adds space between each nav item */
+  }
+  
+  nav ul li a {
+    color: white; /* makes links white */
+    text-decoration: none; /* takes away underline from links */
+    font-weight: bold; /* makes links bold */
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline; /* adds underline when you hover */
+  }
+  
+  section {
+    padding: 20px; /* space inside section */
+    margin: 20px; /* space around section */
+    background-color: white; /* makes section background white */
+    border-radius: 8px; /* rounds the corners */
+  }
+  
+  h2 {
+    color: #333; /* dark grey heading */
+  }
+  
+  .button {
+    display: inline-block; /* makes the button show in line */
+    padding: 10px 20px; /* gives the button space inside */
+    background-color: #007bff; /* makes button blue */
+    color: white; /* makes button text white */
+    text-decoration: none; /* no underline */
+    font-weight: bold; /* bold button text */
+    border-radius: 5px; /* soft corners on button */
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* darker blue when hovered */
+  }
+  
+  ul {
+    padding-left: 20px; /* moves list items a bit to the right */
+  }
+  
+  ul li {
+    margin-bottom: 10px; /* space between list items */
+  }
+  
