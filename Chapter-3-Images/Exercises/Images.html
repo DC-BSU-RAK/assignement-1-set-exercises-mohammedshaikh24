@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- sets the character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- makes it responsive for all screen sizes -->
+  <title>Golden Hour Moments</title> <!-- title shown in the browser tab -->
+  <style>
+    /* body styling with warm gradient background */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffb348, #ff845b); /* beautiful gradient for the golden hour vibe */
+      color: #2c2c2c;
+      margin: 0;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    /* title styles with color and text shadow */
+    h1 {
+      color: #b1534a;
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* soft text shadow for a subtle effect */
+    }
+
+    /* styling for the paragraph below the title */
+    p {
+      font-size: 1.1em;
+      color: #4a4a4a;
+      margin-bottom: 40px;
+    }
+
+    /* container for each image */
+    .thepic {
+      margin: 40px 0;
+    }
+
+    /* image styles with filters for the golden hour look */
+    img {
+      width: 800px;
+      max-width: 90%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* drop shadow for a soft floating effect */
+      filter: sepia(10%) brightness(1.1) contrast(1.15) saturate(110%); /* warm sepia tone with high contrast */
+      transition: filter 0.4s ease-in-out, transform 0.3s ease; /* smooth transition effect on hover */
+    }
+
+    /* effect on hover for images */
+    img:hover {
+      filter: sepia(0%) brightness(1) contrast(1); /* reset filter to normal on hover */
+      transform: scale(1.02); /* zoom effect on hover */
+    }
+
+    /* styling for the caption text under each image */
+    .under {
+      margin-top: 12px;
+      font-size: 0.95rem;
+      color: #634646;
+      font-style: italic; /* italicized text for caption */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- main page header with the title -->
+  <h1>Golden Hour Moments</h1>
+  <!-- brief description of the page content -->
+  <p>Have a look at these great pictures that give us sunset vibes and makes us feel fresh which are available for commercial use in unsplash</p>
+
+  <!-- first sunset image with caption -->
+  <div class="thepic">
+    <img 
+      src="photo-1498654896293-37aacf113fd9.avif" 
+      alt="Golden sunset over ocean waves"
+      width="800"
+      height="533"
+      title="Sunset over the sea – Photo by Jordan Steranka on Unsplash">
+    <p class="under">Image by Jordan Steranka – Licensed under Unsplash’s free use policy for commercial purposes.</p>
+  </div>
+
+  <!-- second sunset image with caption -->
+  <div class="thepic">
+    <img 
+      src="photo-1501973801540-537f08ccae7b.avif" 
+      alt="Sunset behind mountain peaks"
+      width="800"
+      height="533"
+      title="Mountain view at sunset – Photo by Mario Dobelmann on Unsplash">
+    <p class="under">Image by Mario Dobelmann – Licensed under Unsplash’s free use policy for commercial purposes.</p>
+  </div>
+
+  <!-- third sunset image with caption -->
+  <div class="thepic">
+    <img 
+      src="johannes-plenio-qkfxBc2NQ18-unsplash.jpg" 
+      alt="Sunset through trees with lake reflection"
+      width="800"
+      height="533"
+      title="Sunset through trees – Photo by Johannes Plenio on Unsplash">
+    <p class="under">Image by Johannes Plenio – Licensed under Unsplash’s free use policy for commercial purposes.</p>
+  </div>
+
+</body>
+</html>
