@@ -1,68 +1,99 @@
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* sets the font for the whole page */
-    margin: 0; /* removes space around the page */
-    padding: 0; /* removes space inside the page */
-    background-color: #f4f4f4; /* light grey background */
-  }
-  
-  header {
-    background-color: #333; /* dark background for header */
-    padding: 10px; /* adds some space inside header */
-    color: white; /* makes text in header white */
-  }
-  
-  nav ul {
-    list-style: none; /* removes bullets from nav list */
-    padding: 0; /* takes out default padding */
-    margin: 0; /* removes default margin */
-    text-align: center; /* centers nav items */
-  }
-  
-  nav ul li {
-    display: inline; /* puts nav items side by side */
-    margin: 0 15px; /* adds space between each nav item */
-  }
-  
-  nav ul li a {
-    color: white; /* makes links white */
-    text-decoration: none; /* takes away underline from links */
-    font-weight: bold; /* makes links bold */
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline; /* adds underline when you hover */
-  }
-  
-  section {
-    padding: 20px; /* space inside section */
-    margin: 20px; /* space around section */
-    background-color: white; /* makes section background white */
-    border-radius: 8px; /* rounds the corners */
-  }
-  
-  h2 {
-    color: #333; /* dark grey heading */
-  }
-  
-  .button {
-    display: inline-block; /* makes the button show in line */
-    padding: 10px 20px; /* gives the button space inside */
-    background-color: #007bff; /* makes button blue */
-    color: white; /* makes button text white */
-    text-decoration: none; /* no underline */
-    font-weight: bold; /* bold button text */
-    border-radius: 5px; /* soft corners on button */
-  }
-  
-  .button:hover {
-    background-color: #0056b3; /* darker blue when hovered */
-  }
-  
-  ul {
-    padding-left: 20px; /* moves list items a bit to the right */
-  }
-  
-  ul li {
-    margin-bottom: 10px; /* space between list items */
-  }
-  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1d2b; /* Dark blue-gray background inspired by Ragnarök */
+  color: #e0e0e0; /* Light text for contrast */
+}
+
+header {
+  background-color: #101117;
+  padding: 20px 0;
+  color: #e0e0e0;
+  text-align: center;
+  border-bottom: 4px solid #7fb5ff; /* Icy blue underline */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  letter-spacing: 1px;
+  color: #7fb5ff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+  background-color: #1f2230;
+  border: 2px solid #7fb5ff;
+  border-radius: 10px;
+  width: fit-content;
+  box-shadow: 0 0 12px rgba(127, 181, 255, 0.3);
+}
+
+nav ul li {
+  margin: 0;
+  padding: 15px 25px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a {
+  color: #7fb5ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+nav ul li:hover {
+  background-color: #2c2f3f;
+}
+
+nav ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #2c2f3f;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  color: #7fb5ff;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #7fb5ff;
+  color: #101117;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #5a91cc;
+  color: #ffffff;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
