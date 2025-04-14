@@ -1,3 +1,4 @@
+/* Base layout styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,6 +8,7 @@ body {
   min-height: 100vh; /* makes footer stick to bottom */
 }
 
+/* header styling */
 header {
   background-color: #17072b; /* dark purple header */
   color: white;
@@ -14,6 +16,7 @@ header {
   text-align: center;
 }
 
+/* header title */
 header h1 {
   font-family: Tahoma, sans-serif;
   font-size: 3em; /* bigger title */
@@ -22,6 +25,7 @@ header h1 {
   margin: 0;
 }
 
+/* nav bar */
 nav ul {
   list-style: none;
   padding: 0;
@@ -31,24 +35,36 @@ nav ul {
   gap: 40px; /* space between nav items */
 }
 
+/* nav bar links */
 nav a {
   color: white;
   text-decoration: none;
   font-size: 1.2em; /* bigger nav text */
 }
 
+/* main layout */
 main {
   display: flex;
-  justify-content: space-between;
-  padding: 40px; /* space around main content */
+  justify-content: flex-start;
+  padding-left: 40px;  /* keep left padding */
+  padding-right: 0;    /* remove right padding */
+  padding-top: 40px;
+  padding-bottom: 40px;
+  gap: 5px;
   flex: 1;
 }
 
+
+
+
+
+/* welcome section */
 .welcome {
   flex: 2; /* takes more space than line-up */
   padding-right: 30px;
 }
 
+/* welcome title */
 .welcome h2 {
   font-size: 3.5em; /* make welcome title bigger */
   font-weight: bold;
@@ -56,11 +72,13 @@ main {
   margin-bottom: 10px;
 }
 
+/* welcome paragraph */
 .welcome p {
   line-height: 1.6; /* spacing between lines */
   margin-bottom: 20px;
 }
 
+/* welcome image */
 .welcome img {
   width: 100%;
   max-width: 600px;
@@ -68,21 +86,15 @@ main {
   display: block;
 }
 
-.line-up {
-  flex: 1;
-  background-color: #264075; /* dark blue box */
-  color: white;
-  padding: 20px;
-  border-radius: 7px;
-  right: 20px; /* just in case */
-}
 
+/* line-up title */
 .line-up h2 {
   font-size: 2.6em; /* make line up title bigger */
   text-decoration: underline;
   margin-bottom: 20px;
 }
 
+/* line-up list */
 .line-up ul {
   list-style: none;
   padding: 0;
@@ -90,17 +102,7 @@ main {
   margin-bottom: 20px;
 }
 
-.line-up .images {
-  display: flex;
-  gap: 10px; /* space between two images */
-}
-
-.line-up .images img {
-  width: 200px; 
-  height: 200px; 
-  object-fit: cover; /* keeps the images neat */
-}
-
+/* footer section */
 footer {
   background-color: #8c15e9; /* footer color */
   color: white;
@@ -108,4 +110,31 @@ footer {
   padding: 10px;
   font-size: 0.9em;
   margin-top: auto; /* pushes footer to bottom */
+}
+.lineup {
+  flex: 1;
+  background-color: #264075;
+  color: white;
+  padding: 20px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  align-self: stretch;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+.lineup .images {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.lineup .images img {
+  width: 200px; 
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 5px; /* optional: smooth edges */
 }
