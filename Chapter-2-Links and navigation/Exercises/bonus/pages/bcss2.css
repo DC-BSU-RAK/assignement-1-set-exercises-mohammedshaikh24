@@ -1,0 +1,100 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1d2b; /* Dark blue-gray background inspired by Ragnarök */
+    color: #e0e0e0; /* Light text for contrast */
+  }
+  
+  header {
+    background-color: #101117;
+    padding: 20px 0;
+    color: #e0e0e0;
+    text-align: center;
+    border-bottom: 4px solid #7fb5ff; /* Icy blue underline */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+    color: #7fb5ff;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: center;
+    background-color: #1f2230;
+    border: 2px solid #7fb5ff;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 0 0 12px rgba(127, 181, 255, 0.3);
+  }
+  
+  nav ul li {
+    margin: 0;
+    padding: 15px 25px;
+    transition: background-color 0.3s;
+  }
+  
+  nav ul li a {
+    color: #7fb5ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+  }
+  
+  nav ul li:hover {
+    background-color: #2c2f3f;
+  }
+  
+  nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #2c2f3f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    color: #7fb5ff;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #7fb5ff;
+    color: #101117;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #5a91cc;
+    color: #ffffff;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
