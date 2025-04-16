@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"> <!--sets the character encoding -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--makes the website responsive to all screen sizes -->
-  <title>Petrol Calculator</title> <!--the title shown on the browser tab -->
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Petrol Calculator</title> 
   <link rel="stylesheet" href="js.css"> <!--links the external CSS stylesheet -->
 </head>
 <body>
@@ -18,7 +18,7 @@
     <input type="number" id="litrebox" value="0" step="0.1"> <!--starts at 0 -->
 
     <label for="coinselector">currency</label> <!--currency choice -->
-    <select id="coinselector" onchange="updateCost()"> <!--runs when currency changes -->
+    <select id="coinselector" onchange="updateCost()"> 
       <option value="USD">$ - dollars</option>
       <option value="AED">د.إ - dirhams</option>
       <option value="GBP" selected>£ - pounds</option>
@@ -57,10 +57,10 @@
 
         // convert depending on chosen currency
         if (currency === "USD") {
-          convertedTotal = baseTotal; // already in USD now
+          convertedTotal = baseTotal; 
           symbol = "$";
         } else if (currency === "AED") {
-          convertedTotal = baseTotal; // already in AED now
+          convertedTotal = baseTotal; 
           symbol = "د.إ";
         }
 
