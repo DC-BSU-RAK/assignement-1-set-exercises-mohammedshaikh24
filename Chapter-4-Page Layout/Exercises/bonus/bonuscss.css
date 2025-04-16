@@ -8,7 +8,7 @@ body {
     min-height: 100vh; /* makes footer stick to bottom */
 }
 
-/* big calming blue bar on top */
+
 header {
     background-color: #34568B; 
     color: #ffffff;
@@ -24,7 +24,7 @@ header h1 {
 
 /* footer at the very bottom */
 footer {
-    background-color: #34568B; /* matching top bar */
+    background-color: #34568B; 
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 15px;
@@ -52,7 +52,7 @@ nav li {
     padding: 15px 0;
 }
 
-/* white links no underline */
+/
 nav a {
     text-decoration: none;
     color: #ffffff;
@@ -70,7 +70,7 @@ main {
 /* big box on the right side */
 section {
     flex: 2;
-    background-color: #ffffff; /* white */
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
