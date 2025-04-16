@@ -1,4 +1,4 @@
-/* Base layout styling */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -10,7 +10,7 @@ body {
 
 /* header styling */
 header {
-  background-color: #17072b; /* dark purple header */
+  background-color: #17072b; 
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -19,7 +19,7 @@ header {
 /* header title */
 header h1 {
   font-family: Tahoma, sans-serif;
-  font-size: 3em; /* bigger title */
+  font-size: 3em; 
   font-weight: 700;
   text-decoration: underline; /* underline the title */
   margin: 0;
@@ -46,8 +46,8 @@ nav a {
 main {
   display: flex;
   justify-content: flex-start;
-  padding-left: 40px;  /* keep left padding */
-  padding-right: 0;    /* remove right padding */
+  padding-left: 40px;  
+  padding-right: 0;    
   padding-top: 40px;
   padding-bottom: 40px;
   gap: 5px;
@@ -60,13 +60,13 @@ main {
 
 /* welcome section */
 .welcome {
-  flex: 2; /* takes more space than line-up */
+  flex: 2; 
   padding-right: 30px;
 }
 
 /* welcome title */
 .welcome h2 {
-  font-size: 3.5em; /* make welcome title bigger */
+  font-size: 3.5em; 
   font-weight: bold;
   text-decoration: underline;
   margin-bottom: 10px;
@@ -74,7 +74,7 @@ main {
 
 /* welcome paragraph */
 .welcome p {
-  line-height: 1.6; /* spacing between lines */
+  line-height: 1.6; 
   margin-bottom: 20px;
 }
 
@@ -89,7 +89,7 @@ main {
 
 /* line-up title */
 .line-up h2 {
-  font-size: 2.6em; /* make line up title bigger */
+  font-size: 2.6em; 
   text-decoration: underline;
   margin-bottom: 20px;
 }
@@ -98,13 +98,13 @@ main {
 .line-up ul {
   list-style: none;
   padding: 0;
-  line-height: 2; /* more space between list items */
+  line-height: 2; 
   margin-bottom: 20px;
 }
 
 /* footer section */
 footer {
-  background-color: #8c15e9; /* footer color */
+  background-color: #8c15e9; 
   color: white;
   text-align: center;
   padding: 10px;
